@@ -17,7 +17,7 @@ Before you begin, ensure you have the following installed:
 First, clone this repository to your local machine:
 
 ```bash
-git clone [repository-url]
+git clone https://github.com/kislayvats/school_vac_client.git
 cd svac
 ```
 
@@ -41,6 +41,15 @@ The project includes a `.env` file with all necessary environment variables for 
 
 - API connection strings
 - API keys
+
+> **Important for Local Development**:
+> When running the application locally, make sure to update the API URL in the `.env` file to match your backend server's port. For example:
+>
+> ```
+> NEXT_PUBLIC_REACT_APP_API_DOMAIN=http://localhost:5050
+> ```
+>
+> Replace `5050` with the port number your backend server is running on.
 
 ### Testing Bulk Upload
 
