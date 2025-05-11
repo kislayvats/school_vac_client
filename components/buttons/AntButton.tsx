@@ -1,4 +1,4 @@
-import { AntButtonTypeProps } from "@/types/buttonTypes";
+import { AntButtonTypeProps } from "@/types";
 import { Button } from "antd";
 import classNames from "classnames";
 

@@ -47,8 +47,8 @@ export default function HomePage() {
           School Vaccination Dashboard
         </h1>
         <p className="mt-2 text-lg text-gray-600">
-          Welcome back! Here's an overview of your school's vaccination status
-          and upcoming drives.
+          {`Welcome back! Here's an overview of your school's vaccination status
+          and upcoming drives.`}
         </p>
       </div>
 

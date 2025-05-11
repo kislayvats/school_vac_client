@@ -4,7 +4,7 @@ import { generateAvatarFromName, QUERY_KEY_LIST } from "@/config";
 import { getAllVaccinationDrivesAPI } from "@/functions";
 import { SearchIcon } from "@/icons";
 import { schoolAdminStore } from "@/store/schoolAdminSlice";
-import { ChevronDownIcon, PlusIcon } from "@heroicons/react/24/outline";
+import { PlusIcon } from "@heroicons/react/24/outline";
 import { Pagination, Spinner } from "@heroui/react";
 import { useQuery } from "@tanstack/react-query";
 import Link from "next/link";
@@ -43,8 +43,6 @@ export default function AllVaccinationDrives() {
 
   return (
     <div>
-      -==
-      {JSON.stringify(vaccinationDrivesData, null, 2)}
       <div className="mx-auto max-w-md sm:max-w-3xl">
         <div>
           <div className="text-center">

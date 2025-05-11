@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@heroui/react";
-import { CustomButtonPropType } from "@/types/buttonTypes";
+import { CustomButtonPropType } from "@/types";
 import classNames from "classnames";
 
 const CustomButton: React.FC<CustomButtonPropType> = ({

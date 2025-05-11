@@ -28,7 +28,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { IconOnlyButton } from "@/components/buttons";
 
 import { QUERY_KEY_LIST } from "@/config";
-import { message } from "antd";
+
 import { currentModal } from "@/store/modalSlice";
 
 import { useQuery, useQueryClient } from "@tanstack/react-query";
@@ -46,7 +46,7 @@ const INITIAL_VISIBLE_COLUMNS = [
   "actions",
 ];
 
-export const LeadTableColumnsData = [
+const LeadTableColumnsData = [
   { name: "Sl.No", uid: "sl_no", sortable: true },
   { name: "Full Name", uid: "name", sortable: true },
   { name: "Student ID", uid: "student_id", sortable: true },
@@ -55,6 +55,7 @@ export const LeadTableColumnsData = [
   { name: "Date & Time", uid: "createdAt", sortable: true },
   { name: "Actions", uid: "actions", sortable: false },
 ];
+
 export default function StudentsTable() {
   const adminUser = useSelector(schoolAdminStore);
   const queryClient = useQueryClient();

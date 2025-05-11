@@ -1,6 +1,6 @@
 import React, { MouseEvent, MouseEventHandler } from "react";
 import { Button } from "@heroui/react";
-import { CustomIconOnlyButtonProps } from "@/types/buttonTypes";
+import { CustomIconOnlyButtonProps } from "@/types";
 
 const IconOnlyButton: React.FC<CustomIconOnlyButtonProps> = ({
   color = "default",
