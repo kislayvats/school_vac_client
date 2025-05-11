@@ -68,18 +68,27 @@ export default function AllVaccinationDrives() {
             </p>
           </div>
 
-          <TextInput
-            name="filterValue"
-            type="text"
-            placeholder="Search by vaccine name"
-            aria-label="Search by vaccine name"
-            onChange={(e) => setFilterValue(e.target.value)}
-            value={filterValue}
-            className="mt-4"
-            variant="bordered"
-            size="lg"
-            startContent={<SearchIcon className="size-4" />}
-          />
+          <div className="mt-4 flex gap-4 items-center">
+            <TextInput
+              name="filterValue"
+              type="text"
+              placeholder="Search by vaccine name"
+              aria-label="Search by vaccine name"
+              onChange={(e) => setFilterValue(e.target.value)}
+              value={filterValue}
+              className="flex-1"
+              variant="bordered"
+              size="lg"
+              startContent={<SearchIcon className="size-4" />}
+            />
+            <Link
+              href="/vaccination/create"
+              className="inline-flex items-center gap-2 rounded-md bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              <PlusIcon className="size-5" />
+              Create Vaccination
+            </Link>
+          </div>
         </div>
         <div className="mt-10">
           <h3 className="text-sm font-medium text-gray-500">

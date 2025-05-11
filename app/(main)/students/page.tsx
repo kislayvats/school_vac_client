@@ -413,7 +413,7 @@ export default function StudentsTable() {
           )}
         </TableHeader>
         <TableBody
-          emptyContent={"No Imported Medicine request found"}
+          emptyContent={"No students found"}
           items={sortedItems?.map((item, index) => ({
             ...item,
             sl_no: (page - 1) * rowsPerPage + index + 1,
