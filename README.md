@@ -39,6 +39,23 @@ This command will:
 
 The project includes a `.env` file with all necessary environment variables for easy testing. You don't need to create or modify any environment variables to get started. The included variables are:
 
+- API connection strings
+- API keys
+
+### Testing Bulk Upload
+
+For testing the bulk upload functionality, a sample Excel file `dummy_students.xlsx` is included in the repository. This file contains:
+
+- Sample student data for testing
+- Properly formatted columns matching the required upload template
+- Multiple entries to test bulk processing
+
+To test bulk upload:
+
+1. Login as admin
+2. Navigate to the bulk upload section
+3. Use the provided `dummy_students.xlsx` file to test the functionality
+
 ### Step 3: Start the Development Server
 
 Run the development server using:
